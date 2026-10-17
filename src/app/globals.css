@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+  --color-madhesh-deep: #0B3F32;
+  --color-madhesh-green: #176B4D;
+  --color-madhesh-terracotta: #C96B45;
+  --color-madhesh-gold: #D99A2B;
+  --color-madhesh-sand: #E9D8B8;
+  --color-madhesh-ivory: #F8F6F0;
+  --color-madhesh-charcoal: #1B211E;
+  --font-serif: var(--font-inter), "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-sans: var(--font-inter), "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-heading: var(--font-inter), "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+:root {
+  --background: #F8F6F0;
+  --foreground: #1B211E;
+}
+
+body {
+  background-color: #F8F6F0;
+  color: #1B211E;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom scrollbar & editorial styling */
+::selection {
+  background-color: #E9D8B8;
+  color: #0B3F32;
+}
