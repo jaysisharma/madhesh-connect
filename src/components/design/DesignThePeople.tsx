@@ -5,27 +5,27 @@ import { ArrowRight } from "lucide-react";
 export function DesignThePeople() {
   const teamMembers = [
     {
-      name: "Team Member",
-      role: "Role",
-      bio: "Short bio or description will be added here.",
+      name: "Dr. Ramakant Jha",
+      role: "Groundwater Hydrology Lead",
+      bio: "Aquifer telemetry and traditional pokhari rejuvenation in Saptari.",
       image: "/images/team-1.jpg",
     },
     {
-      name: "Team Member",
-      role: "Role",
-      bio: "Short bio or description will be added here.",
+      name: "Anjali Sah",
+      role: "Civic Tech & Ward Lead",
+      bio: "Devanagari address normalization and municipal ward GIS in Dhanusha.",
       image: "/images/team-2.jpg",
     },
     {
-      name: "Team Member",
-      role: "Role",
-      bio: "Short bio or description will be added here.",
+      name: "M. Irfan Ansari",
+      role: "Youth Assembly Coordinator",
+      bio: "Grassroots civic hearings and multilingual forums across Parsa & Bara.",
       image: "/images/team-3.jpg",
     },
     {
-      name: "Team Member",
-      role: "Role",
-      bio: "Short bio or description will be added here.",
+      name: "Sunita K. Yadav",
+      role: "Agricultural Commons Lead",
+      bio: "Community seed banks and farmer knowledge networks in Rautahat.",
       image: "/images/team-4.jpg",
     },
   ];

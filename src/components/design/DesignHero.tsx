@@ -199,18 +199,16 @@ export function DesignHero() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-4 items-center my-auto">
           {/* Left Column: Editorial Headline & Copy */}
           <div className="lg:col-span-5 xl:col-span-5 space-y-6 lg:space-y-7 pr-0 lg:pr-4">
-            {/* Primary Headline in Editorial Serif matching mockup */}
-            <h1 className="font-serif text-4xl sm:text-5xl lg:text-[58px] xl:text-[64px] font-bold tracking-tight text-[#0B3528] leading-[1.08]">
+            {/* Primary Headline in Grounded Editorial Voice */}
+            <h1 className="text-4xl sm:text-5xl lg:text-[54px] xl:text-[60px] font-bold tracking-tight text-[#0B3528] leading-[1.1]">
               Connecting<br />
-              Madhesh for<br />
-              <span className="text-[#C14F28]">a brighter tomorrow.</span>
+              people, land &<br />
+              <span className="text-[#C14F28]">civic intelligence.</span>
             </h1>
 
             {/* Subtitle Description */}
             <p className="text-sm sm:text-base text-[#2E453D] leading-relaxed max-w-[430px] font-normal">
-              Madhesh Connect brings people, communities, information and
-              opportunities together through meaningful civic engagement and
-              technology.
+              An independent civic platform across the 8 districts of Madhesh Province—bridging community knowledge, open data, and local public capability.
             </p>
 
             {/* CTA Buttons */}
@@ -343,16 +341,22 @@ export function DesignHero() {
 
         {/* 3. Bottom Bar Content (Scroll Indicator, Nepal/Madhesh Map & Floating Socials) */}
         <div className="pt-6 sm:pt-8 flex flex-col sm:flex-row items-start sm:items-end justify-between gap-6 border-t border-[#0B3528]/10">
-          {/* Bottom-Left: Mouse Scroll Indicator */}
-          <div className="flex items-center gap-3 text-xs text-[#0B3528] font-medium">
-            <div className="w-5 h-8 rounded-full border-[1.8px] border-[#0B3528]/80 flex items-start justify-center p-1">
-              <span className="w-1 h-2 bg-[#0B3528] rounded-full animate-bounce" />
+          {/* Bottom-Left: Clickable Scroll Indicator */}
+          <a
+            href="#overview"
+            className="flex items-center gap-3 text-xs text-[#0B3528] font-medium hover:text-[#C14F28] transition-colors cursor-pointer group"
+          >
+            <div className="w-5 h-8 rounded-full border-[1.8px] border-[#0B3528]/80 group-hover:border-[#C14F28] flex items-start justify-center p-1 transition-colors">
+              <span className="w-1 h-2 bg-[#0B3528] group-hover:bg-[#C14F28] rounded-full animate-bounce transition-colors" />
             </div>
-            <div className="leading-tight text-[11px] text-[#0B3528]">
-              <div>Scroll to explore</div>
-              <div className="font-bold">our work and impact</div>
+            <div className="leading-tight text-[11px]">
+              <div className="text-slate-600">Explore Madhesh</div>
+              <div className="font-bold text-[#0B3528] group-hover:text-[#C14F28] transition-colors flex items-center gap-1">
+                <span>Our work & province</span>
+                <span>↓</span>
+              </div>
             </div>
-          </div>
+          </a>
 
           {/* Bottom-Right: Highlighted Madhesh Map of Nepal matching mockup */}
           <div className="flex items-center gap-3 bg-black/40 backdrop-blur-md px-4 py-2.5 rounded-xl border border-white/20 shadow-lg text-white">
