@@ -138,17 +138,23 @@ export function Header() {
                 )}
               </div>
 
-              {/* Search Button */}
+              {/* Professional Command Search Trigger */}
               <button
                 type="button"
                 onClick={() => setSearchModalOpen(true)}
-                className="flex items-center gap-2 px-3.5 py-1.5 text-slate-700 hover:text-[#0B3528] bg-slate-50 hover:bg-[#F3EFE6] border border-slate-200/80 rounded-full transition-all cursor-pointer shadow-xs"
+                className="group flex items-center justify-between gap-3 w-36 sm:w-52 md:w-60 px-3.5 py-1.5 text-slate-500 hover:text-slate-800 bg-slate-50 hover:bg-slate-100/90 border border-slate-200/90 hover:border-slate-300 rounded-full transition-all duration-200 cursor-pointer shadow-xs"
                 aria-label="Search"
                 title="Search (⌘K)"
               >
-                <Search className="w-4 h-4 text-slate-600" />
-                <span className="text-xs font-medium text-slate-600 hidden sm:inline">Search</span>
-                <kbd className="hidden sm:inline-block px-1.5 py-0.5 text-[10px] bg-white text-slate-500 rounded border border-slate-300 font-mono">⌘K</kbd>
+                <div className="flex items-center gap-2 text-xs font-medium truncate text-slate-500 group-hover:text-slate-700">
+                  <Search className="w-3.5 h-3.5 text-slate-400 group-hover:text-[#0B3528] transition-colors shrink-0" />
+                  <span className="truncate">Search Madhesh...</span>
+                </div>
+                <div className="hidden sm:flex items-center gap-1 shrink-0">
+                  <kbd className="inline-flex items-center px-1.5 py-0.5 text-[10px] font-mono font-medium text-slate-500 bg-white border border-slate-200 rounded shadow-2xs group-hover:border-slate-300">
+                    ⌘K
+                  </kbd>
+                </div>
               </button>
             </div>
           </div>
